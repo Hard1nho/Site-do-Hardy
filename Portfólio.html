@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <style>
+        body { zoom: 67%;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.);
+    transform: scale(1.);
+    transform-origin: 0 0;
+            background-color: black; /* Define o fundo como preto */
+            color: white; /* Define a cor do texto como branco */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto; /* Permite a rolagem vertical */
+            scrollbar-width: thin; /* Ajusta a largura da scrollbar (funciona no Firefox) */
+            scrollbar-color: #e20323 transparent; /* Cor da scrollbar (funciona no Firefox) */
+        }
+
+        /* Para navegadores Webkit como Chrome e Safari */
+        body::-webkit-scrollbar {
+            width: 12px; /* Largura da scrollbar */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #e20323; /* Cor do "puxador" da scrollbar */
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 40px;
+            font-size: 100px; /* Define o tamanho da fonte para o título */
+            background-color: #e0053a; /* Cor de fundo */
+            padding: 30px 20px; /* Espaçamento interno para criar o retângulo */
+            border-radius: 40px; /* Borda arredondada */
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 40px; /* Margem no topo para separar do título */
+        }
+
+        .links a {
+            margin: 30px;
+            text-decoration: none;
+            font-size: 54px;
+            color: white;
+            background-color: #e20323; /* Cor de fundo */
+            padding: 10px 20px; /* Espaçamento interno para criar o retângulo */
+            border-radius: 100px; /* Borda arredondada */
+            transition: transform 0.3s ease-in-out; /* Transição suave para a mudança de escala */
+            display: inline-block; /* Para que a transição funcione corretamente */
+        }
+
+        .links a:hover {
+            transform: scale(1.2); /* Aumenta a escala ao passar o mouse */
+        }
+
+        .galeria { 
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .galeria img {
+            max-width: 500px;
+            height: auto;
+            cursor: pointer;
+            margin: 60px; /* Espaçamento entre as imagens */
+            border: 10px solid transparent; /* Adiciona uma borda transparente */
+            transition: border-color 0.3s ease-in-out; /* Transição suave para a mudança de cor */
+        }
+
+        .galeria img:hover {
+            border-color: #e20323; /* Altera a cor da borda ao passar o mouse */
+            transform: scale(1.3);
+        }
+
+        /* Estilo para o retângulo no final da página */
+        .decoracao {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #e0053a;
+            z-index: -1; /* Coloca o retângulo atrás do conteúdo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        Portfólio
+    </div>
+
+    <div class="links">
+        <a href="site do hardy.html">Início</a>
+        <a href="Experiência.html">Experiência</a>
+        <a href="Contato.html">Contato</a>
+    </div>
+<hr>
+    <!-- Galeria de imagens -->
+    <div class="galeria">
+        <img src="imagens/O Mar de Brasília.png" alt="Desenho 2">
+        <img src="imagens/trabalho.png" alt="lobo">
+        <img src="imagens/lobo.jpg" alt="Desenho 3">
+    </div>
+
+    <br>
+
+    <div class="galeria">
+        <img src="imagens/folha 1.png" alt="Sua Imagem 1">
+        <img src="imagens/folha 2.png" alt="Sua Imagem 2">
+        <img src="imagens/folha 3.png" alt="Sua Imagem 3">
+    </div>
+
+    <br>
+
+    <div class="galeria">
+        <img src="imagens/sangue.png" alt="Sua Imagem 1">
+        <img src="imagens/mascara.png" alt="Sua Imagem 2">
+    </div>
+
+    <br>
+    <br>
+    <!-- Retângulo decorativo no final -->
+    <div class="decoracao"></div>
+
+    <!-- Conteúdo do seu site aqui -->
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    
+    <style>
+        body { zoom: 67%;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.);
+    transform: scale(1.);
+    transform-origin: 0 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #e20323 transparent;
+        }
+
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #e20323;
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 40px;
+            font-size: 100px;
+            background-color: #e0053a;
+            padding: 30px 20px;
+            border-radius: 40px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .links a {
+            margin: 30px;
+            text-decoration: none;
+            font-size: 54px;
+            color: white;
+            background-color: #e20323;
+            padding: 10px 20px;
+            border-radius: 100px;
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .links a:hover {
+            transform: scale(1.2);
+        }
+
+        .galeria { 
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        .galeria img {
+            max-width: 700px;
+            height: auto;
+            cursor: pointer;
+            margin-right: 20px;
+            border: 10px solid #e20323;
+            border-radius: 10px;
+            transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .galeria img:hover {
+            border-color: white;
+        }
+
+        /* Estilo para o retângulo com o texto */
+        .texto-com-retangulo {
+            background-color: #e0053a; /* Cor do retângulo */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 10px; /* Borda arredondada */
+            max-width: 660px; /* Largura máxima */
+            margin-left: 200px; /* Espaçamento à esquerda */
+            color: white; /* Cor do texto */
+            font-size: 30px;
+            text-align: justify;
+            
+        }
+        .decoracao {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #e0053a;
+            z-index: -1; /* Coloca o retângulo atrás do conteúdo */
+            }
+
+            
+        .formulario {
+            max-width: 700px; /* Ajuste a largura máxima do formulário */
+            margin: 0 auto; /* Centraliza o formulário na página */
+            padding: 90px; /* Espaçamento interno para o formulário */
+            background-color: #e0053a; /* Cor de fundo vermelha */
+            border-radius: 70px; /* Borda arredondada */
+            border-color: white;
+            
+        }
+
+        .formulario label {
+            display: block; /* Cada label em uma nova linha */
+            margin-bottom: 5px; /* Espaçamento inferior entre os labels */
+            
+        }
+
+        .formulario input, .formulario textarea {
+            width: 100%; /* Ocupa toda a largura disponível */
+            padding: 10px; /* Espaçamento interno */
+            margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+            border-radius: 5px; /* Borda arredondada */
+            
+        }
+
+        .formulario textarea {
+            height: 100px; /* Altura da área de texto */
+             }
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        Contato
+    </div>
+
+    <div class="links">
+        <a href="site do hardy.html">Início</a>
+        <a href="Portfólio.html">Portfólio</a>
+        <a href="Experiência.html">Experiência</a>
+    </div>
+<hr>
+<br>
+<br>
+<br>
+<div class="formulario">
+    <h2>Formulário de Contato</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        <input  type="submit" value="Enviar">
+    </form>
+</div>
+<br>
+<br>
+<br>
+    <!-- Retângulo decorativo no final -->
+    <div class="decoracao"></div>
+
+    <!-- Conteúdo do seu site aqui -->
+
+</body>
+</html>
